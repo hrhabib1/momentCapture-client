@@ -1,4 +1,17 @@
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProviders";
+
 const Navber = () => {
+  const { user,logOut } = useContext(AuthContext);
+  console.log(user)
+  const handleSignOut = () => {
+      logOut()
+      .then(result => {
+          console.log('Sign-out successful....', result)
+         
+      })
+      .catch(e => console.error(e))
+  }
     return (
         <div className="navbar fixed z-10 max-w-screen-xl mx-auto bg-opacity-30 bg-sky-200 p-5 rounded-xl text-black">
         <div className="navbar-start">
@@ -24,8 +37,14 @@ const Navber = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn bg-yellow-200" href="/signIn">Sign In</a>
-          <a className="btn bg-yellow-300 ml-5" href="/signUp">Sign Up</a>
+        { 
+              user?.email ?
+              <> 
+               <button onClick={handleSignOut} className="btn btn-active btn-warning">Sign out</button>
+              </>
+             
+                :
+                <a className="btn bg-primary text-black" href="/signUp">SignIn/SignUp</a>}
         </div>
       </div>
     );

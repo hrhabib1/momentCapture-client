@@ -27,7 +27,7 @@ const ServicesCart = ({ item }) => {
                                user?.email === 'shakilahmed7924@gmail.com'? 
                                <button></button> :
                                <Link to={`/booking/${_id}`}>
-                               <button className="btn bg-slate-500 bg-opacity-60 w-96">Booking Now</button>
+                               <button className="btn bg-slate-500 bg-opacity-60 w-96 text-primary">Booking Now</button>
                                </Link>
                             }
                 </div>

@@ -13,6 +13,12 @@ import Drone from "../../Pages/Category/Drone/Drone";
 import Fashion from "../../Pages/Category/Fashion/Fashion";
 import Wedding from "../../Pages/Category/Wedding/Wedding";
 import Portrait from "../../Pages/Category/Portrait/Portrait";
+import WeddingService from "../../Pages/Services/WeddingService";
+import NatureService from "../../Pages/Services/NatureService";
+import EventService from "../../Pages/Services/EventService";
+import DroneService from "../../Pages/Services/DroneService";
+import FashionService from "../../Pages/Services/FashionService";
+import PortraitService from "../../Pages/Services/PortraitService";
  export const router = createBrowserRouter([
     {
         path: '/',
@@ -50,6 +56,24 @@ import Portrait from "../../Pages/Category/Portrait/Portrait";
         },
          { path: '/portrait',
           element: <Portrait></Portrait>
+        },
+         { path: '/natureService',
+          element: <NatureService></NatureService>
+        },
+         { path: '/eventService',
+          element: <EventService></EventService>
+        },
+         { path: '/droneService',
+          element: <DroneService></DroneService>
+        },
+         { path: '/fashionService',
+          element: <FashionService></FashionService>
+        },
+         { path: '/weddingService',
+          element: <WeddingService></WeddingService>
+        },
+         { path: '/portraitService',
+          element: <PortraitService></PortraitService>
         },
       
       ],}

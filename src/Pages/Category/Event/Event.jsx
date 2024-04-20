@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import img1 from '../../../images/category/event/event1.jpg'
 import img2 from '../../../images/category/event/event2.jpeg'
 import img3 from '../../../images/category/event/event3.jpg'
@@ -16,7 +17,7 @@ const Event = () => {
                         <h2 className="card-title">Event Photography</h2>
                         <p>This image click by <strong>Md. Ismail Tawhid</strong> <br />Senior Photographer</p>
                         <div className="card-actions">
-                            <button className="btn px-28 btn-primary">Go for Booking</button>
+                            <Link to='/eventService'><button className="btn px-28 btn-primary">Go for Booking</button></Link>
                         </div>
                     </div>
                 </div>
@@ -28,7 +29,7 @@ const Event = () => {
                         <h2 className="card-title">Event Photography</h2>
                         <p>This image click by <strong>Md. Ismail Tawhid</strong> <br />Senior Photographer</p>
                         <div className="card-actions">
-                            <button className="btn px-28 btn-primary">Go for Booking</button>
+                            <Link to='/eventService'><button className="btn px-28 btn-primary">Go for Booking</button></Link>
                         </div>
                     </div>
                 </div>
@@ -40,7 +41,7 @@ const Event = () => {
                         <h2 className="card-title">Event Photography</h2>
                         <p>This image click by <strong>Md. Ismail Tawhid</strong> <br />Senior Photographer</p>
                         <div className="card-actions">
-                            <button className="btn px-28 btn-primary">Go for Booking</button>
+                            <Link to='/eventService'><button className="btn px-28 btn-primary">Go for Booking</button></Link>
                         </div>
                     </div>
                 </div>
@@ -52,7 +53,7 @@ const Event = () => {
                         <h2 className="card-title">Event Photography</h2>
                         <p>This image click by <strong>Adnan Rony</strong> <br />Senior Photographer</p>
                         <div className="card-actions">
-                            <button className="btn px-28 btn-primary">Go for Booking</button>
+                            <Link to='/eventService'><button className="btn px-28 btn-primary">Go for Booking</button></Link>
                         </div>
                     </div>
                 </div>
@@ -64,7 +65,7 @@ const Event = () => {
                         <h2 className="card-title">Event Photography</h2>
                         <p>This image click by <strong>Adnan Rony</strong> <br />Senior Photographer</p>
                         <div className="card-actions">
-                            <button className="btn px-28 btn-primary">Go for Booking</button>
+                            <Link to='/eventService'><button className="btn px-28 btn-primary">Go for Booking</button></Link>
                         </div>
                     </div>
                 </div>
@@ -76,7 +77,7 @@ const Event = () => {
                         <h2 className="card-title">Event Photography</h2>
                         <p>This image click by <strong>Adnan Rony</strong> <br />Senior Photographer</p>
                         <div className="card-actions">
-                            <button className="btn px-28 btn-primary">Go for Booking</button>
+                            <Link to='/eventService'><button className="btn px-28 btn-primary">Go for Booking</button></Link>
                         </div>
                     </div>
                 </div>

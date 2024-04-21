@@ -19,6 +19,7 @@ import EventService from "../../Pages/Services/EventService";
 import DroneService from "../../Pages/Services/DroneService";
 import FashionService from "../../Pages/Services/FashionService";
 import PortraitService from "../../Pages/Services/PortraitService";
+import Booking from "../../Pages/Booking/Booking";
  export const router = createBrowserRouter([
     {
         path: '/',
@@ -74,6 +75,10 @@ import PortraitService from "../../Pages/Services/PortraitService";
         },
          { path: '/portraitService',
           element: <PortraitService></PortraitService>
+        },
+         { path: '/booking/:id',
+          element: <Booking></Booking>,
+        loader: ({params}) => fetch(`http://localhost:5000/addService/${params.id}`)
         },
       
       ],}

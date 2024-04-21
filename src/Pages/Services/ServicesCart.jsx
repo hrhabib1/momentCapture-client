@@ -24,7 +24,7 @@ const ServicesCart = ({ item }) => {
                     <p className="mb-5">- {location}</p>
                     
                     {
-                               user?.email === 'shakilahmed7924@gmail.com'? 
+                               user?.email === 'ismailtawhid@gmail.com'? 
                                <button></button> :
                                <Link to={`/booking/${_id}`}>
                                <button className="btn bg-slate-500 bg-opacity-60 w-96 text-primary">Booking Now</button>

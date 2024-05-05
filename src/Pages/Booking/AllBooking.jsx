@@ -3,14 +3,15 @@ import { AuthContext } from "../providers/AuthProviders";
 import BookingRow from "./BookingRow";
 
 const AllBooking = () => {
-
     const { user } = useContext(AuthContext);
     const [bookings, setBookings] = useState([]);
+    
     useEffect(() => {
         fetch('http://localhost:5000/bookings')
             .then(res => res.json())
             .then(data => setBookings(data))
     }, []);
+    
     const handleBookingConfirm = id => {
         const proceed = confirm('Are you sure you want to confirm it?');
         if (proceed) {
@@ -34,6 +35,7 @@ const AllBooking = () => {
                 })
         }
     }
+    
     return (
         <div>
             <div className="pt-28">
@@ -48,24 +50,22 @@ const AllBooking = () => {
                                     </label>
                                 </th>
                                 <th>Service Name</th>
-                                    <th>Customer Name & Email</th>
-                                    <th>Price</th>
-                                    <th>Date</th>
-                                    <th>Photographer Name &<br />Position</th>
-                                    <th>Status</th>
+                                <th>Customer Name & Email</th>
+                                <th>Price</th>
+                                <th>Date</th>
+                                <th>Photographer Name &<br />Position</th>
+                                <th>Status</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {
-                                bookings.map(boking => <BookingRow
-                                    key={boking._id}
-                                    boking={boking}
+                            {bookings.length > 0 && bookings.map(booking => (
+                                <BookingRow
+                                    key={booking._id}
+                                    booking={booking}
                                     handleBookingConfirm={handleBookingConfirm}
-                                ></BookingRow>)
-                            }
-
+                                />
+                            ))}
                         </tbody>
-
                     </table>
                 </div>
             </div>

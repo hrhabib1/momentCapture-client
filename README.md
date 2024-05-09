@@ -1,8 +1,17 @@
-# React + Vite
+Projects Details: 'Moment Capture with Towhid' a web-based platform designed to seamlessly connect individuals with a professional photographer.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Website Features: 
+o	Easy Registration and Login option with email and password.
+o	Photographer can post her previous work and packages.
+o	Users can see packages and booking.
 
-Currently, two official plugins are available:
+Tools: React.JS, Node.js, MongoDB, Firebase, Express.js, JavaScript, React Tailwind, CSS3.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live site: https://momentcapture-c6245.web.app
+
+Clint Repo: https://github.com/hrhabib1/momentCapture-client
+
+Server Repo: https://github.com/hrhabib1/momentCapture-server
+
+Admin Email: ismailtawhid@gmail.com Pass: 12345@
+

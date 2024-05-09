@@ -5,7 +5,7 @@ const FashionService = () => {
     const [fashionServices, setFashionServices] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/addService')
+        fetch('https://moment-capture-server-beta.vercel.app/addService')
             .then(res => res.json())
             .then(data =>{
                 const fashionServise = data.filter(item => item.

@@ -7,7 +7,7 @@ const AllBooking = () => {
     const [bookings, setBookings] = useState([]);
     
     useEffect(() => {
-        fetch('http://localhost:5000/bookings')
+        fetch('https://moment-capture-server-beta.vercel.app/bookings')
             .then(res => res.json())
             .then(data => setBookings(data))
     }, []);
@@ -15,7 +15,7 @@ const AllBooking = () => {
     const handleBookingConfirm = id => {
         const proceed = confirm('Are you sure you want to confirm it?');
         if (proceed) {
-            fetch(`http://localhost:5000/bookings/${id}`, {
+            fetch(`https://moment-capture-server-beta.vercel.app/bookings/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'

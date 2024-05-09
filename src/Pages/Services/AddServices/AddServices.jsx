@@ -33,7 +33,7 @@ const AddServices = () => {
 
         }
         console.log(addServices);
-        fetch('http://localhost:5000/addService', {
+        fetch('https://moment-capture-server-beta.vercel.app/addService', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -5,7 +5,7 @@ const MyBooking = () => {
     
         const { user } = useContext(AuthContext);
         const [bookings, setBookings] = useState([]);
-        const url = `http://localhost:5000/bookings?email=${user.email}`;
+        const url = `https://moment-capture-server-beta.vercel.app/bookings?email=${user.email}`;
         useEffect(() => {
             fetch(url)
                 .then(res => res.json())
@@ -14,7 +14,7 @@ const MyBooking = () => {
         const handleDelete= id =>{
             const proceed = confirm('Are you sure you want to delete it?');
             if(proceed){
-              fetch(`http://localhost:5000/bookings/${id}`, {
+              fetch(`https://moment-capture-server-beta.vercel.app/bookings/${id}`, {
                   method: 'DELETE'
               })
               .then(res => res.json())

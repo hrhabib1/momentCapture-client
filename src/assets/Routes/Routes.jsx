@@ -87,7 +87,7 @@ import PrivateRoutes from "./PrivateRoutes";
         },
          { path: '/booking/:id',
           element: <PrivateRoutes><Booking></Booking></PrivateRoutes>,
-        loader: ({params}) => fetch(`http://localhost:5000/addService/${params.id}`)
+        loader: ({params}) => fetch(`https://moment-capture-server-beta.vercel.app/addService/${params.id}`)
         },
       
       ],}
